@@ -5,8 +5,33 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --bg-image: url('../images/cover-image-dark.png');
+    --bg-color: #000028;
+    --dark-gray: #353430;
+    --dark-gray-rgb: 53, 52, 48;
+    --color-pink: #FF0070;
+    --color-pink-rgb: 255, 0, 112;
+    --deep-purple: #DB00FF;
+    --purple: #FF8DCB;
+    --light-purple: #FFC2E6;
+    --light-pink: #FFF1F7;
+    --pink: #F1B2CE;
+    --header-color: var(--bg-color);
+    --accent-color: var(--color-pink);
+    --accent-color-rgb: var(--color-pink-rgb);
+    --decorated-color: var(--accent-color);
+    --button-color: var(--accent-color);
+    --title-color: var(--deep-purple);
+    --title-shadow-color: var(--accent-color);
+    --h-color: var(--bg-color);
+    --h2-color: var(--color-pink);
+    --p-text-color: var(--pink);
+    --link-color: var(--light-purple);
+    --font-family: 'IBM Plex mono', monospace, sans-serif;
+    --font-size-p: 18px;
+    --btn-border: 1px solid var(--button-color);
+    --btn-border-hover: 1px solid rgba(var(--accent-color-rgb) , 0.4);
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --line-height: 23.4px;
+    --label-display: block;
 }
