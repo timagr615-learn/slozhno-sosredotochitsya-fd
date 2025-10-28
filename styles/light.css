@@ -4,9 +4,39 @@
   переключая тему
 */
 
+
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --bg-image: url('../images/cover-image-light.png');
+    --bg-color: var(--light-pink);
+    --h-color: var(--dark-gray);
+    --h2-color: var(--dark-gray);
+    --title-color: var(--light-purple);
+    --title-shadow-color: var(--purple);
+    --link-color: var(--dark-gray);
+    --accent-color: var(--purple);
+    --p-text-color: var(--dark-gray);
+    --decorated-color: var(--dark-gray);
+    --button-color: var(--dark-gray);
+    --btn-border: 1px solid var(--button-color);
+    --btn-border-hover: 1px solid rgba(var(--dark-gray-rgb) , 0.4);
+    --label-display: none;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-image: url('../images/cover-image-light.png');
+        --bg-color: var(--light-pink);
+        --h-color: var(--dark-gray);
+        --h2-color: var(--dark-gray);
+        --title-color: var(--light-purple);
+        --title-shadow-color: var(--purple);
+        --link-color: var(--dark-gray);
+        --accent-color: var(--purple);
+        --p-text-color: var(--dark-gray);
+        --decorated-color: var(--dark-gray);
+        --button-color: var(--dark-gray);
+        --btn-border: 1px solid var(--button-color);
+        --btn-border-hover: 1px solid rgba(var(--dark-gray-rgb) , 0.4);
+        --label-display: none;
+    }
 }
