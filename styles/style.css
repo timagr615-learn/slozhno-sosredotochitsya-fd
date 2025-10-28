@@ -10,8 +10,13 @@
     background-color: var(--bg-color);
     color: var(--accent-color);
     font-family: var(--font-family), sans-serif;
-    padding: 10px;
     line-height: var(--line-height);
+}
+
+header,
+main,
+footer {
+    margin: 10px;
 }
 
 .link {
@@ -235,23 +240,23 @@
 }
 
 .gallery {
-    margin-block-end: 40px;
+    margin-block-end: 38px;
+    gap: 5px;
 }
 
 .title-normal {
-
     font-weight: 400;
 }
 
 .title-image {
     color: var(--h-color);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .content__section-card-image {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .footer {
@@ -261,6 +266,7 @@
 
 
 .footer__text {
+    padding-block-end: 15px;
     margin: auto;
     color: var(--title-color);
     font-weight: 700;
@@ -274,10 +280,17 @@
     :root {
         --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
-
-    .page {
-        padding: 20px;
+    .header {
+        margin: 20px;
+        margin-block-start: 20px;
+        margin-block-end: 40px;
     }
+
+    main,
+    footer {
+        margin: 20px;
+    }
+
 
     .decorated-zone {
         min-height: 1004px;
@@ -286,15 +299,13 @@
     .decorated-zone::after {
         bottom: 40px;
     }
-    .header {
-        margin-block-end: 40px;
-    }
+
     .header__theme-menu {
         align-self: center;
         margin-block-start: 100px;
     }
     .header__title {
-        margin-block-start: 110px;
+        margin-block-start: 105px;
         margin-inline-start: -20px;
         /*margin: 120px auto 0 0;*/
     }
@@ -345,7 +356,7 @@
     }
 
     .gallery .content__section-title {
-        margin-block-end: 20px;
+        margin-block-end: 16px;
     }
 
     .gallery__container {
@@ -391,7 +402,7 @@
     .footer__text {
         align-self: center;
         justify-self: center;
-        padding-block-end: 20px;
+        padding-block-end: 32px;
     }
 
 }
@@ -416,7 +427,7 @@
     }
 
     .header__title {
-        margin-block-start: 55px;
+        margin-block-start: 45px;
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 
@@ -451,7 +462,7 @@
 
     .solutions {
         grid-template-columns: minmax(335px, min-content) auto;
-        margin-block-end: 64px;
+        margin-block-end: 60px;
     }
 
     .gallery__container {
@@ -460,5 +471,9 @@
 
     .decorated-zone {
         min-height: 768px;
+    }
+
+    .footer__text {
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 }
