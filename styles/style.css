@@ -200,7 +200,7 @@
     font-size: var(--font-size-p);
     font-weight: 700;
     /*line-height: 23.4px;*/
-    white-space: pre-line;
+
     color: var(--h2-color);
     margin-block-end: 19px;
 }
@@ -311,6 +311,10 @@
         margin-block-end: 60px;
     }
 
+    .reasons .content__section-title {
+        white-space: pre-line;
+    }
+
     .reasons .content__section-card {
         grid-column-start: 2;
     }
@@ -321,6 +325,7 @@
 
     .concentration .content__section-title {
         max-width: 130px;
+
     }
 
     .solutions {
