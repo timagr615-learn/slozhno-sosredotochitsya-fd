@@ -396,8 +396,8 @@
     .footer__text {
         align-self: center;
         justify-self: center;
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
-
 }
 
 @media (width >= 1024px) {
@@ -456,9 +456,5 @@
 
     .decorated-zone {
         min-height: 768px;
-    }
-
-    .footer__text {
-        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 }
